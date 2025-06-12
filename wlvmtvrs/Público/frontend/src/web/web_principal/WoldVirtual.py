@@ -15,7 +15,7 @@ def pagina1():
 def pagina2():
     return render_template('pagina2.html')
 
-@WoldVirtual.route('/pagina2')
+@WoldVirtual.route('/webcentral')
 def webcentral():
     return render_template('webcentral.html')
 
