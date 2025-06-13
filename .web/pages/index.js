@@ -10,12 +10,12 @@ import { jsx } from "@emotion/react"
 
 
 
-export function Dropdownmenu__item_dae734d98dc77c867b3b4599faea032d () {
+export function Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_ecad624a83ecc5177bccafbea2f26ea0 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Binance Smart Chain" }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_dbc56e49772170ff2adde4c5e0901692 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Ethereum" }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
@@ -23,8 +23,8 @@ export function Dropdownmenu__item_dae734d98dc77c867b3b4599faea032d () {
   return (
     jsx(
 RadixThemesDropdownMenu.Item,
-{onClick:on_click_ecad624a83ecc5177bccafbea2f26ea0},
-"Binance Smart Chain"
+{onClick:on_click_dbc56e49772170ff2adde4c5e0901692},
+"Ethereum"
 ,)
   )
 }
@@ -48,12 +48,12 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
-export function Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6 () {
+export function Dropdownmenu__item_dae734d98dc77c867b3b4599faea032d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_dbc56e49772170ff2adde4c5e0901692 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Ethereum" }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_ecad624a83ecc5177bccafbea2f26ea0 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Binance Smart Chain" }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
@@ -61,8 +61,8 @@ export function Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6 () {
   return (
     jsx(
 RadixThemesDropdownMenu.Item,
-{onClick:on_click_dbc56e49772170ff2adde4c5e0901692},
-"Ethereum"
+{onClick:on_click_ecad624a83ecc5177bccafbea2f26ea0},
+"Binance Smart Chain"
 ,)
   )
 }
