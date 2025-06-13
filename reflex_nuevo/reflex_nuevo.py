@@ -1,6 +1,6 @@
 import reflex as rx
 
-from rxconfig import config
+from wlvmtvrs.Público.frontend.pruebas.src.web.web_principal.reflex_nuevo.rxconfig import config
 
 
 class State(rx.State):
