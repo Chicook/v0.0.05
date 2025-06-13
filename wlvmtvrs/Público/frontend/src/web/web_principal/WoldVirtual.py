@@ -15,9 +15,10 @@ def pagina1():
 def pagina2():
     return render_template('pagina2.html')
 
-@WoldVirtual.route('/pagina2')
-def webcentral():
-    return render_template('webcentral.html')
+# @WoldVirtual.route('/webcentral')
+# def webcentral():
+# return render_template('webcentral.html')
+# arreglar #
 
 if __name__ == '__main__':
     WoldVirtual.run(debug=True)
