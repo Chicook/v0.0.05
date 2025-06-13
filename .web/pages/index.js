@@ -29,12 +29,12 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
-export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
+export function Dropdownmenu__item_c62a309dd480b72b95a1f7863802867e () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_447bb4e82cb1926a67d0ed70436472be = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_989b034b7fa075acfb35222c5763d811 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Polygon" }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
@@ -42,8 +42,8 @@ export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
   return (
     jsx(
 RadixThemesDropdownMenu.Item,
-{onClick:on_click_447bb4e82cb1926a67d0ed70436472be},
-"Solana"
+{onClick:on_click_989b034b7fa075acfb35222c5763d811},
+"Polygon"
 ,)
   )
 }
@@ -94,25 +94,6 @@ jsx(Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6,{},)
   )
 }
 
-export function Dropdownmenu__item_c62a309dd480b72b95a1f7863802867e () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_989b034b7fa075acfb35222c5763d811 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Polygon" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_989b034b7fa075acfb35222c5763d811},
-"Polygon"
-,)
-  )
-}
-
 export function Dropdownmenu__trigger_e8c7a03e03361f54a8d00743b8c293c5 () {
   
   const reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state = useContext(StateContexts.reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state)
@@ -131,6 +112,25 @@ RadixThemesButton,
 {css:({ ["background"] : ((reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.selected_network === "Redes Blockchain") ? "#6c757d" : "#28a745"), ["color"] : "white", ["borderRadius"] : "md", ["&:hover"] : ({ ["background"] : ((reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.selected_network === "Redes Blockchain") ? "#5a6268" : "#218838") }) }),size:({ ["initial"] : "1", ["md"] : "2" })},
 reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.selected_network
 ,),)
+  )
+}
+
+export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_447bb4e82cb1926a67d0ed70436472be = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_447bb4e82cb1926a67d0ed70436472be},
+"Solana"
+,)
   )
 }
 
