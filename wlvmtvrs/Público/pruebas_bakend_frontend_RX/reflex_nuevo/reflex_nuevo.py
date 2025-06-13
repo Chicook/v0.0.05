@@ -49,7 +49,7 @@ def index() -> rx.Component:
                 ),
                 rx.menu.root(
                     rx.menu.trigger(
-                        rx.button("Redes Blockchain", bg="#6c757d", color="white", border_radius="md", _hover={"bg": "#5a6268"}, size="3")
+                        rx.button("Blockchains, Disponibles", bg="#6c757d", color="white", border_radius="md", _hover={"bg": "#5a6268"}, size="3")
                     ),
                     rx.menu.content(
                         rx.menu.item("Ethereum"),
