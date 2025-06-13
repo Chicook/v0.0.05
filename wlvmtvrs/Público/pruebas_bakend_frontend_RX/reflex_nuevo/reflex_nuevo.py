@@ -1,7 +1,5 @@
 import reflex as rx
-
-from wlvmtvrs.Público.frontend.pruebas.src.web.web_principal.reflex_nuevo.rxconfig import config
-
+from wlvmtvrs/Público/pruebas_bakend_frontend_RX import config
 
 class State(rx.State):
     """The app state."""
@@ -51,7 +49,7 @@ def index() -> rx.Component:
                 ),
                 rx.menu.root(
                     rx.menu.trigger(
-                        rx.button("Redes Blockchain", bg="#6c757d", color="white", border_radius="md", _hover={"bg": "#5a6268"}, size="3")
+                        rx.button("Blockchains, Disponibles", bg="#6c757d", color="white", border_radius="md", _hover={"bg": "#5a6268"}, size="3")
                     ),
                     rx.menu.content(
                         rx.menu.item("Ethereum"),
