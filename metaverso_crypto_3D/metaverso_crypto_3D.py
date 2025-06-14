@@ -78,8 +78,8 @@ def index() -> rx.Component:
             box_sizing="border-box",
         ),
         bg="linear-gradient(to right, #a8c0ff, #3f2b96)",
-        height="calc(100vh - 1px)",
-        width="100vw",
+        height="calc(100vh - 8px)",
+        width="calc(100vw - 8px)",
         display="flex",
         flex_direction="column",
         align_items="center",
@@ -88,12 +88,29 @@ def index() -> rx.Component:
         box_sizing="border-box",
         padding_y="0px",
         overflow_y="hidden",
+        overflow_x="hidden",
     )
 
 app = rx.App(
     theme=rx.theme(
         accent_color="violet",
         gray_color="slate",
+        styles={
+            "html": {
+                "margin": "0",
+                "padding": "0",
+                "overflow": "hidden",
+                "height": "100%",
+                "width": "100%",
+            },
+            "body": {
+                "margin": "0",
+                "padding": "0",
+                "overflow": "hidden",
+                "height": "100%",
+                "width": "100%",
+            },
+        },
     ),
 )
 app.add_page(index) 
