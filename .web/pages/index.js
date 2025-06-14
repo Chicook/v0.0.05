@@ -37,25 +37,6 @@ jsx(Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6,{},)
   )
 }
 
-export function Dropdownmenu__item_c62a309dd480b72b95a1f7863802867e () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_989b034b7fa075acfb35222c5763d811 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Polygon" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_989b034b7fa075acfb35222c5763d811},
-"Polygon"
-,)
-  )
-}
-
 export function Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -75,12 +56,12 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
-export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
+export function Dropdownmenu__item_c62a309dd480b72b95a1f7863802867e () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_447bb4e82cb1926a67d0ed70436472be = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_989b034b7fa075acfb35222c5763d811 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Polygon" }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
@@ -88,8 +69,8 @@ export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
   return (
     jsx(
 RadixThemesDropdownMenu.Item,
-{onClick:on_click_447bb4e82cb1926a67d0ed70436472be},
-"Solana"
+{onClick:on_click_989b034b7fa075acfb35222c5763d811},
+"Polygon"
 ,)
   )
 }
@@ -134,6 +115,25 @@ reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.se
   )
 }
 
+export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_447bb4e82cb1926a67d0ed70436472be = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_447bb4e82cb1926a67d0ed70436472be},
+"Solana"
+,)
+  )
+}
+
 export default function Component() {
     
 
@@ -146,10 +146,10 @@ Fragment,
 {},
 jsx(
 RadixThemesBox,
-{css:({ ["background"] : "linear-gradient(to right, #a8c0ff, #3f2b96)", ["height"] : "calc(100vh - 5px)", ["width"] : "calc(100vw - 5px)", ["display"] : "flex", ["flexDirection"] : "column", ["alignItems"] : "center", ["justifyContent"] : "flex-start", ["border"] : "0px", ["boxShadow"] : "0px 0px 0px 4px #3498db", ["boxSizing"] : "border-box", ["padding"] : "0px", ["overflowY"] : "hidden", ["overflowX"] : "hidden" })},
+{css:({ ["background"] : "linear-gradient(to right, #a8c0ff, #3f2b96)", ["height"] : "100vh", ["width"] : "100vw", ["display"] : "flex", ["flexDirection"] : "column", ["alignItems"] : "center", ["justifyContent"] : "flex-start", ["border"] : "0px", ["boxShadow"] : "0px 0px 0px 4px #3498db", ["boxSizing"] : "border-box", ["padding"] : "0px", ["overflowY"] : "hidden", ["overflowX"] : "hidden" })},
 jsx(
 RadixThemesFlex,
-{align:"start",className:"rx-Stack",css:({ ["width"] : "100%", ["background"] : "white", ["alignItems"] : "center", ["zIndex"] : "10", ["flexWrap"] : "wrap", ["height"] : "70px" }),direction:"row",gap:"3"},
+{align:"start",className:"rx-Stack",css:({ ["width"] : "100%", ["background"] : "#FFD700", ["alignItems"] : "center", ["zIndex"] : "10", ["flexWrap"] : "wrap" }),direction:"row",gap:"3"},
 jsx(
 RadixThemesHeading,
 {css:({ ["color"] : "#34495e", ["fontFamily"] : "Helvetica, Arial, sans-serif", ["--default-font-family"] : "Helvetica, Arial, sans-serif" }),size:({ ["initial"] : "6", ["md"] : "7" })},
@@ -179,7 +179,7 @@ RadixThemesFlex,
 {css:({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["flexGrow"] : "1", ["width"] : "100%", ["boxSizing"] : "border-box", ["overflow"] : "hidden" })},
 jsx(
 RadixThemesBox,
-{css:({ ["background"] : "white", ["borderRadius"] : "15px", ["padding"] : "0px", ["width"] : "95%", ["boxShadow"] : "lg", ["height"] : "100%", ["boxSizing"] : "border-box" })},
+{css:({ ["background"] : "white", ["borderRadius"] : "15px", ["padding"] : "0px", ["width"] : "95%", ["boxShadow"] : "lg", ["height"] : "95%", ["boxSizing"] : "border-box", ["overflow"] : "hidden" })},
 jsx(
 RadixThemesText,
 {as:"p",css:({ ["fontFamily"] : "Helvetica, Arial, sans-serif", ["--default-font-family"] : "Helvetica, Arial, sans-serif", ["color"] : "#34495e" }),size:"6"},
