@@ -16,7 +16,7 @@ class State(rx.State):
 def index() -> rx.Component:
     return rx.box(
         rx.hstack(
-            rx.heading("World Virtual", size=rx.breakpoints(initial="6", md="7"), color="#34495e", font_family="Helvetica, Arial, sans-serif", padding_left=rx.breakpoints(initial="10px", md="20px")),
+            rx.heading("World Virtual", size=rx.breakpoints(initial="6", md="7"), color="#34495e", font_family="Helvetica, Arial, sans-serif"),
             rx.tabs.root(
                 rx.tabs.list(
                     rx.tabs.trigger("Acerca de", value="acerca", font_family="Helvetica, Arial, sans-serif", size=rx.breakpoints(initial="1", md="2")),
@@ -48,45 +48,43 @@ def index() -> rx.Component:
                 is_open=State.show_networks_menu,
                 on_open_change=State.set_show_networks_menu,
             ),
-            padding_y="0px",
-            padding_x="0px",
             width="100%",
             bg="white",
-            border_bottom="0px solid #3498db",
             align_items="center",
             z_index="10",
             flex_wrap="wrap",
+            height="70px",
         ),
         rx.center(
             rx.box(
+                rx.text("AQUI: tiene que ir la zona blanca., del tamaño del marco blanco", font_family="Helvetica, Arial, sans-serif", color="#34495e", size="6"),
                 bg="white",
-                border="2px solid #3498db",
                 border_radius="15px",
                 padding="0px",
-                width="100%",
+                width="95%",
                 box_shadow="lg",
                 height="100%",
                 box_sizing="border-box",
             ),
             flex_grow="1",
             width="100%",
-            height="100%",
             display="flex",
             align_items="center",
             justify_content="center",
-            padding_y="0px",
             box_sizing="border-box",
+            overflow="hidden",
         ),
         bg="linear-gradient(to right, #a8c0ff, #3f2b96)",
-        height="calc(100vh - 8px)",
-        width="calc(100vw - 8px)",
+        height="calc(100vh - 5px)",
+        width="calc(100vw - 5px)",
         display="flex",
         flex_direction="column",
         align_items="center",
         justify_content="flex-start",
-        border="4px solid #3498db",
+        border="0px",
+        box_shadow="0px 0px 0px 4px #3498db",
         box_sizing="border-box",
-        padding_y="0px",
+        padding="0px",
         overflow_y="hidden",
         overflow_x="hidden",
     )
@@ -96,6 +94,10 @@ app = rx.App(
         accent_color="violet",
         gray_color="slate",
         styles={
+            "*": {
+                "margin": "0",
+                "padding": "0",
+            },
             "html": {
                 "margin": "0",
                 "padding": "0",
@@ -109,6 +111,10 @@ app = rx.App(
                 "overflow": "hidden",
                 "height": "100%",
                 "width": "100%",
+                "&::-webkit-scrollbar": {
+                    "display": "none", # Para navegadores basados en Webkit (Chrome, Safari)
+                },
+                "scrollbarWidth": "none", # Para Firefox
             },
         },
     ),
