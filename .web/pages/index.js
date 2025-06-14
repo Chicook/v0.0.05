@@ -10,6 +10,25 @@ import { jsx } from "@emotion/react"
 
 
 
+export function Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_dbc56e49772170ff2adde4c5e0901692 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Ethereum" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_dbc56e49772170ff2adde4c5e0901692},
+"Ethereum"
+,)
+  )
+}
+
 export function Dropdownmenu__item_dae734d98dc77c867b3b4599faea032d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -44,25 +63,6 @@ export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
 RadixThemesDropdownMenu.Item,
 {onClick:on_click_447bb4e82cb1926a67d0ed70436472be},
 "Solana"
-,)
-  )
-}
-
-export function Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_dbc56e49772170ff2adde4c5e0901692 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Ethereum" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_dbc56e49772170ff2adde4c5e0901692},
-"Ethereum"
 ,)
   )
 }
