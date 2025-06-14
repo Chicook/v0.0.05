@@ -15,85 +15,95 @@ class State(rx.State):
 
 def index() -> rx.Component:
     return rx.box(
+        # Barra superior amarilla (Header)
         rx.hstack(
-            rx.heading("World Virtual", size=rx.breakpoints(initial="6", md="7"), color="#34495e", font_family="Helvetica, Arial, sans-serif", padding_left=rx.breakpoints(initial="10px", md="20px")),
-            rx.tabs.root(
-                rx.tabs.list(
-                    rx.tabs.trigger("Acerca de", value="acerca", font_family="Helvetica, Arial, sans-serif", size=rx.breakpoints(initial="1", md="2")),
-                    rx.tabs.trigger("Características", value="caracteristicas", font_family="Helvetica, Arial, sans-serif", size=rx.breakpoints(initial="1", md="2")),
-                    rx.tabs.trigger("Comunidad", value="comunidad", font_family="Helvetica, Arial, sans-serif", size=rx.breakpoints(initial="1", md="2")),
-                    flex_wrap="wrap",
-                ),
-                color_scheme="blue",
-                min_height="auto",
-            ),
+            rx.text("World Virtual", font_size="1.3em", color="black"),
             rx.spacer(),
-            rx.menu.root(
-                rx.menu.trigger(
-                    rx.button(
-                        State.selected_network,
-                        bg=rx.cond(State.selected_network == "Redes Blockchain", "#6c757d", "#28a745"),
-                        color="white",
-                        border_radius="md",
-                        _hover={"bg": rx.cond(State.selected_network == "Redes Blockchain", "#5a6268", "#218838")},
-                        size=rx.breakpoints(initial="1", md="2")
-                    )
-                ),
-                rx.menu.content(
-                    rx.menu.item("Ethereum", on_click=lambda: State.select_network("Ethereum")),
-                    rx.menu.item("Polygon", on_click=lambda: State.select_network("Polygon")),
-                    rx.menu.item("Binance Smart Chain", on_click=lambda: State.select_network("Binance Smart Chain")),
-                    rx.menu.item("Solana", on_click=lambda: State.select_network("Solana")),
-                ),
-                is_open=State.show_networks_menu,
-                on_open_change=State.set_show_networks_menu,
-            ),
-            padding_y="0px",
-            padding_x="0px",
+            rx.text("Acerca de", margin_left="0.7em", color="black", font_size="0.85em"),
+            rx.text("Características", margin_left="0.7em", color="black", font_size="0.85em"),
+            rx.text("Comunidad", margin_left="0.7em", color="black", font_size="0.85em"),
+            rx.button("Redes Blockchain", bg="#343a40", color="white", margin_left="1.2em", font_size="0.85em", padding="0.4em 0.9em"),
             width="100%",
-            bg="white",
-            border_bottom="0px solid #3498db",
+            height="33px",
+            background_color="#FFD700",
             align_items="center",
+            padding_left="12px",
+            padding_right="12px",
             z_index="10",
-            flex_wrap="wrap",
+            flex_shrink="0",
+            box_sizing="border-box",
         ),
-        rx.center(
+        # Contenedor principal con el fondo verde y el contenido blanco (Main Content Area)
+        rx.box(
             rx.box(
-                bg="white",
-                border="2px solid #3498db",
+                rx.text("AQUÍ tiene que ir la zona blanca., del tamaño del marco blanco", color="black", padding="20px"),
+                background_color="white",
+                border="2px solid blue",
                 border_radius="15px",
-                padding="0px",
-                width="100%",
                 box_shadow="lg",
+                width="90%", # Aumentado el ancho de la zona blanca
                 height="100%",
+                padding="0",
+                margin="0",
                 box_sizing="border-box",
+                overflow="hidden",
             ),
-            flex_grow="1",
             width="100%",
-            height="100%",
+            flex_grow="1", # Permitir que ocupe el espacio restante
+            background_color="#228B22",
+            padding="2px",
+            box_sizing="border-box",
             display="flex",
             align_items="center",
             justify_content="center",
-            padding_y="0px",
-            box_sizing="border-box",
         ),
+
         bg="linear-gradient(to right, #a8c0ff, #3f2b96)",
         height="100vh",
         width="100vw",
+
+        width="100%",
+        height="100vh", # Asegura que la altura total de la página sea del 100% del viewport
+
         display="flex",
         flex_direction="column",
-        align_items="center",
-        justify_content="flex-start",
-        border="4px solid #3498db",
+        border="0px",
+        box_shadow="none",
+        padding="0px",
+        bg="linear-gradient(to right, #a8c0ff, #3f2b96)",
         box_sizing="border-box",
+
         padding_y="0px",
         overflow="hidden",  # Evita el desplazamiento
+      
     )
 
 app = rx.App(
     theme=rx.theme(
         accent_color="violet",
         gray_color="slate",
-    ),
+        styles={
+            "*": {
+                "margin": "0",
+                "padding": "0",
+            },
+            "html": {
+                "margin": "0",
+                "padding": "0",
+                "overflow": "hidden",
+                "height": "100%",
+                "width": "100%",
+            },
+            "body": {
+                "margin": "0",
+                "padding": "0",
+                "overflow": "hidden",
+                "height": "100%",
+                "width": "100%",
+                "&::-webkit-scrollbar": {
+                    "display": "none",
+                },
+                "scrollbarWidth": "none",
+            
 )
 app.add_page(index)
