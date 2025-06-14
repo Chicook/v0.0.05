@@ -29,25 +29,6 @@ RadixThemesDropdownMenu.Item,
   )
 }
 
-export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_447bb4e82cb1926a67d0ed70436472be = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_447bb4e82cb1926a67d0ed70436472be},
-"Solana"
-,)
-  )
-}
-
 export function Dropdownmenu__item_dae734d98dc77c867b3b4599faea032d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -63,6 +44,25 @@ export function Dropdownmenu__item_dae734d98dc77c867b3b4599faea032d () {
 RadixThemesDropdownMenu.Item,
 {onClick:on_click_ecad624a83ecc5177bccafbea2f26ea0},
 "Binance Smart Chain"
+,)
+  )
+}
+
+export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_447bb4e82cb1926a67d0ed70436472be = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesDropdownMenu.Item,
+{onClick:on_click_447bb4e82cb1926a67d0ed70436472be},
+"Solana"
 ,)
   )
 }
