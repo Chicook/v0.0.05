@@ -2,8 +2,6 @@ import reflex as rx
 from rxconfig import config
 
 class State(rx.State):
-    
-
     """El estado de la aplicación."""
     show_networks_menu: bool = False
     selected_network: str = "Redes Blockchain"
@@ -80,7 +78,7 @@ def index() -> rx.Component:
             box_sizing="border-box",
         ),
         bg="linear-gradient(to right, #a8c0ff, #3f2b96)",
-        height="calc(100vh - 1px)",
+        height="100vh",
         width="100vw",
         display="flex",
         flex_direction="column",
@@ -89,7 +87,7 @@ def index() -> rx.Component:
         border="4px solid #3498db",
         box_sizing="border-box",
         padding_y="0px",
-        overflow_y="hidden",
+        overflow="hidden",  # Evita el desplazamiento
     )
 
 app = rx.App(
@@ -98,4 +96,4 @@ app = rx.App(
         gray_color="slate",
     ),
 )
-app.add_page(index) 
+app.add_page(index)
