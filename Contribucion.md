@@ -1,4 +1,7 @@
-###<<<<<<< ju_dev
+### 5. Desarrollo de NFTs (`nfts/`)
+- Desarrollo de NFTs
+- Diseño y modelado de NFTs
+- Optimización de NFTs
 # 🤝 Guía de Contribución para el Metaverso Crypto 3D
 
 ¡Gracias por tu interés en contribuir a nuestro Metaverso Crypto 3D! Esta guía te ayudará a entender cómo puedes participar en este emocionante proyecto.
@@ -103,4 +106,35 @@ Este proyecto está bajo la Licencia MIT. Asegúrate de leer el archivo LICENSE 
 Si tienes preguntas o necesitas ayuda, no dudes en contactarnos a través de los canales de comunicación establecidos en el repositorio.
 
 ¡Esperamos tus contribuciones!
-###>>>>>>> master
+# 📚 Guía de Contribución para el Metaverso Crypto 3D
+¡Gracias por tu interés en contribuir a nuestro Metaverso Crypto 3D! Esta guía te ayudará a entender cómo puedes participar en este emocionante proyecto.
+
+# Smart Contracts Documentation
+
+## Estructura de Contratos
+- `wcv/`: Token principal WCV
+- `entorno_deprueba/`: Ambiente de pruebas
+- `LandNFT.sol`: Contrato NFT de terrenos
+
+### Pasos de Configuración
+1. Instalar dependencias:
+```bash
+npm install -g truffle
+npm install
+```
+
+2. Compilar contratos:
+```bash
+truffle compile
+```
+
+3. Desplegar contratos:
+```bash
+truffle migrate
+```
+
+### Mejoras Pendientes
+- [ ] Auditar contratos
+- [ ] Optimizar gas fees
+- [ ] Implementar más tests
+- [ ] Mejorar documentación
