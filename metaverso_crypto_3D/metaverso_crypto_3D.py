@@ -2,6 +2,7 @@ import reflex as rx
 from rxconfig import config
 
 class State(rx.State):
+    
     """El estado de la aplicación."""
     show_networks_menu: bool = False
     selected_network: str = "Redes Blockchain"
