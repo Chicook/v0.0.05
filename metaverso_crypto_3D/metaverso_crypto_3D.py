@@ -57,8 +57,14 @@ def index() -> rx.Component:
             align_items="center",
             justify_content="center",
         ),
+
+        bg="linear-gradient(to right, #a8c0ff, #3f2b96)",
+        height="100vh",
+        width="100vw",
+
         width="100%",
         height="100vh", # Asegura que la altura total de la página sea del 100% del viewport
+
         display="flex",
         flex_direction="column",
         border="0px",
@@ -66,6 +72,10 @@ def index() -> rx.Component:
         padding="0px",
         bg="linear-gradient(to right, #a8c0ff, #3f2b96)",
         box_sizing="border-box",
+
+        padding_y="0px",
+        overflow="hidden",  # Evita el desplazamiento
+      
     )
 
 app = rx.App(
@@ -94,8 +104,6 @@ app = rx.App(
                     "display": "none",
                 },
                 "scrollbarWidth": "none",
-            },
-        },
-    ),
+            
 )
 app.add_page(index)
