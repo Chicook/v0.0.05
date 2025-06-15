@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 
 
-<<<<<<< HEAD
 import { Fragment, memo, useContext, useEffect, useState } from "react"
 import { Event, getBackendURL, isTrue, refs } from "$/utils/state"
 import { toast, Toaster } from "sonner"
@@ -22,16 +21,6 @@ const pulse = keyframes`
 `
 
 
-=======
-import { Fragment, memo, useContext } from "react"
-import { isTrue, refs } from "$/utils/state"
-import { toast, Toaster } from "sonner"
-import { ColorModeContext } from "$/utils/context"
-import { jsx } from "@emotion/react"
-
-
-
->>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
 
 export const MemoizedToastProvider = memo(({}) => {
     
@@ -47,7 +36,6 @@ export const MemoizedToastProvider = memo(({}) => {
       )
 
 })
-<<<<<<< HEAD
 
 export const DefaultOverlayComponents = memo(({}) => {
     
@@ -92,5 +80,3 @@ jsx(LucideWifiOff,{css:({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"]
       )
 
 })
-=======
->>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3

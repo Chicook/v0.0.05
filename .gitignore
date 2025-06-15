@@ -1,4 +1,5 @@
-# Ignore Reflex 
+*.db
+# Ignore Reflex
 
 .states
 .web
