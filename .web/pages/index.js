@@ -10,86 +10,6 @@ import { jsx } from "@emotion/react"
 
 
 
-<<<<<<< HEAD
-=======
-export function Button_dd6fd48cf9544ade41bd544f5a4c0b93 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_028d035645b35eb7d52b5813833e8d28 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Red A" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%" }),onClick:on_click_028d035645b35eb7d52b5813833e8d28},
-"Red A"
-,)
-  )
-}
-
-export function Button_a75726215240045113e1050d71cae7d2 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-  const reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state = useContext(StateContexts.reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state)
-
-
-  const on_click_22343bb10d8cc595ba63dd56b7b4fc1d = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.toggle_networks_menu", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["background"] : "#343a40", ["color"] : "white", ["marginLeft"] : "1.2em", ["fontSize"] : "0.85em", ["padding"] : "0.4em 0.9em", ["cursor"] : "pointer" }),onClick:on_click_22343bb10d8cc595ba63dd56b7b4fc1d},
-reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.selected_network
-,)
-  )
-}
-
-export function Button_1a9adbd968d6286c04be762cc974d643 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_ebe3c0871dd65cbb580ee98d0fb3b8ad = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Red B" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%" }),onClick:on_click_ebe3c0871dd65cbb580ee98d0fb3b8ad},
-"Red B"
-,)
-  )
-}
-
-export function Button_753b97fabc03257f2ecbcdbae562e218 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_5c1e8324a052834f38dd83994a60c872 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Red C" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%" }),onClick:on_click_5c1e8324a052834f38dd83994a60c872},
-"Red C"
-,)
-  )
-}
-
->>>>>>> 51e4853eac463076457ccb73094593b7b918c847
 export function Fragment_fcc0f6f7f577c2432793a35778a9b148 () {
   
   const reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state = useContext(StateContexts.reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state)
@@ -117,45 +37,6 @@ jsx(Button_dd6fd48cf9544ade41bd544f5a4c0b93,{},)
   )
 }
 
-<<<<<<< HEAD
-export function Button_753b97fabc03257f2ecbcdbae562e218 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_5c1e8324a052834f38dd83994a60c872 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Red C" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%" }),onClick:on_click_5c1e8324a052834f38dd83994a60c872},
-"Red C"
-,)
-  )
-}
-
-export function Button_1a9adbd968d6286c04be762cc974d643 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_ebe3c0871dd65cbb580ee98d0fb3b8ad = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Red B" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%" }),onClick:on_click_ebe3c0871dd65cbb580ee98d0fb3b8ad},
-"Red B"
-,)
-  )
-}
-
 export function Button_a75726215240045113e1050d71cae7d2 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -195,8 +76,44 @@ RadixThemesButton,
   )
 }
 
-=======
->>>>>>> 51e4853eac463076457ccb73094593b7b918c847
+export function Button_753b97fabc03257f2ecbcdbae562e218 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_5c1e8324a052834f38dd83994a60c872 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Red C" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%" }),onClick:on_click_5c1e8324a052834f38dd83994a60c872},
+"Red C"
+,)
+  )
+}
+
+export function Button_1a9adbd968d6286c04be762cc974d643 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_ebe3c0871dd65cbb580ee98d0fb3b8ad = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Red B" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%" }),onClick:on_click_ebe3c0871dd65cbb580ee98d0fb3b8ad},
+"Red B"
+,)
+  )
+}
+
 export default function Component() {
     
 
