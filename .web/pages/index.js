@@ -2,120 +2,94 @@
 
 
 import { Fragment, useCallback, useContext } from "react"
-import { Box as RadixThemesBox, Button as RadixThemesButton, DropdownMenu as RadixThemesDropdownMenu, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Tabs as RadixThemesTabs } from "@radix-ui/themes"
+import { Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Text as RadixThemesText } from "@radix-ui/themes"
 import { EventLoopContext, StateContexts } from "$/utils/context"
-import { Event } from "$/utils/state"
+import { Event, isTrue } from "$/utils/state"
 import NextHead from "next/head"
 import { jsx } from "@emotion/react"
 
 
 
-export function Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6 () {
+export function Button_6c889623a9ccb3219a55f50ba2602202 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
-  const on_click_dbc56e49772170ff2adde4c5e0901692 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Ethereum" }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_e7c89ee54c41bed8e1435741aa41569a = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Polygon" }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
   
   return (
     jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_dbc56e49772170ff2adde4c5e0901692},
-"Ethereum"
-,)
-  )
-}
-
-export function Dropdownmenu__item_dae734d98dc77c867b3b4599faea032d () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_ecad624a83ecc5177bccafbea2f26ea0 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Binance Smart Chain" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_ecad624a83ecc5177bccafbea2f26ea0},
-"Binance Smart Chain"
-,)
-  )
-}
-
-export function Dropdownmenu__item_37ba5000536699318e7d5893b95df8da () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_447bb4e82cb1926a67d0ed70436472be = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_447bb4e82cb1926a67d0ed70436472be},
-"Solana"
-,)
-  )
-}
-
-export function Dropdownmenu__root_f52dc4acc3a89778e0b960c8c7011647 () {
-  
-  const reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state = useContext(StateContexts.reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_open_change_de957873a4c04b7beb60a4100a3782d3 = useCallback(((_ev_0) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.set_show_networks_menu", ({ ["value"] : _ev_0 }), ({  })))], [_ev_0], ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Root,
-{css:({ ["isOpen"] : reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.show_networks_menu }),onOpenChange:on_open_change_de957873a4c04b7beb60a4100a3782d3},
-jsx(Dropdownmenu__trigger_e8c7a03e03361f54a8d00743b8c293c5,{},)
-,jsx(
-RadixThemesDropdownMenu.Content,
-{},
-jsx(Dropdownmenu__item_de6b302b3f1c19ec452a77ae1b027ec6,{},)
-,jsx(Dropdownmenu__item_c62a309dd480b72b95a1f7863802867e,{},)
-,jsx(Dropdownmenu__item_dae734d98dc77c867b3b4599faea032d,{},)
-,jsx(Dropdownmenu__item_37ba5000536699318e7d5893b95df8da,{},)
-,),)
-  )
-}
-
-export function Dropdownmenu__item_c62a309dd480b72b95a1f7863802867e () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_989b034b7fa075acfb35222c5763d811 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.select_network", ({ ["network"] : "Polygon" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesDropdownMenu.Item,
-{onClick:on_click_989b034b7fa075acfb35222c5763d811},
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_e7c89ee54c41bed8e1435741aa41569a},
 "Polygon"
 ,)
   )
 }
 
-export function Dropdownmenu__trigger_e8c7a03e03361f54a8d00743b8c293c5 () {
+export function Button_bdea2adb1c3cb190bc9aa3885e1309be () {
   
-  const reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state = useContext(StateContexts.reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  const reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state = useContext(StateContexts.reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state)
+
+
+  const on_click_0b62d68901eb13b324e8b4eed6039390 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.toggle_networks_menu", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["background"] : "#343a40", ["color"] : "white", ["marginLeft"] : "0.5em", ["fontSize"] : "0.65em", ["padding"] : "0.3em 0.6em", ["cursor"] : "pointer", ["borderRadius"] : "4px" }),onClick:on_click_0b62d68901eb13b324e8b4eed6039390},
+reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.selected_network
+,)
+  )
+}
+
+export function Button_de0a5e42e819885256c25405dc6b025c () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_87b6a14f951f570582f31591b6dac5cd = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Binance Smart Chain" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_87b6a14f951f570582f31591b6dac5cd},
+"Binance Smart Chain"
+,)
+  )
+}
+
+export function Button_d4a80e94114e32e91cfa2025147abdd6 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_398bc081f24190707ba984ada59974bf = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Avalanche" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_398bc081f24190707ba984ada59974bf},
+"Avalanche"
+,)
+  )
+}
+
+export function Fragment_278699aebe0229b67f94e686e5bbfb7c () {
+  
+  const reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state = useContext(StateContexts.reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state)
 
 
 
@@ -124,13 +98,82 @@ export function Dropdownmenu__trigger_e8c7a03e03361f54a8d00743b8c293c5 () {
   
   return (
     jsx(
-RadixThemesDropdownMenu.Trigger,
+Fragment,
+{},
+(reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.show_networks_menu ? (jsx(
+Fragment,
 {},
 jsx(
+RadixThemesFlex,
+{align:"start",className:"rx-Stack",css:({ ["position"] : "absolute", ["top"] : "100%", ["right"] : "0", ["backgroundColor"] : "white", ["border"] : "1px solid #ddd", ["borderRadius"] : "4px", ["boxShadow"] : "0 2px 8px rgba(0,0,0,0.1)", ["zIndex"] : "1000", ["width"] : "160px", ["alignItems"] : "stretch" }),direction:"column",gap:"1"},
+jsx(Button_de0a5e42e819885256c25405dc6b025c,{},)
+,jsx(Button_20b47b495e2be473f225366ecb461e9f,{},)
+,jsx(Button_6c889623a9ccb3219a55f50ba2602202,{},)
+,jsx(Button_d4a80e94114e32e91cfa2025147abdd6,{},)
+,jsx(Button_5b37f6ca731052029592de8c19d95b72,{},)
+,jsx(Button_e1cf53e1c4947790e64fed1e69facab5,{},)
+,),)) : (jsx(
+Fragment,
+{},
+null
+,))),)
+  )
+}
+
+export function Button_e1cf53e1c4947790e64fed1e69facab5 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_1945f731915504a544948d7373abdaff = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
 RadixThemesButton,
-{css:({ ["background"] : ((reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.selected_network === "Redes Blockchain") ? "#6c757d" : "#28a745"), ["color"] : "white", ["borderRadius"] : "md", ["&:hover"] : ({ ["background"] : ((reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.selected_network === "Redes Blockchain") ? "#5a6268" : "#218838") }) }),size:({ ["initial"] : "1", ["md"] : "2" })},
-reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.selected_network
-,),)
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_1945f731915504a544948d7373abdaff},
+"Solana"
+,)
+  )
+}
+
+export function Button_20b47b495e2be473f225366ecb461e9f () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_b0ae231e11ada72431e18db8b956b307 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Ethereum" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_b0ae231e11ada72431e18db8b956b307},
+"Ethereum"
+,)
+  )
+}
+
+export function Button_5b37f6ca731052029592de8c19d95b72 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_ab00aac4316c6e7e194b3b81fd3164cd = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Arbitrum" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_ab00aac4316c6e7e194b3b81fd3164cd},
+"Arbitrum"
+,)
   )
 }
 
@@ -146,45 +189,60 @@ Fragment,
 {},
 jsx(
 RadixThemesBox,
-{css:({ ["background"] : "linear-gradient(to right, #a8c0ff, #3f2b96)", ["height"] : "calc(100vh - 1px)", ["width"] : "100vw", ["display"] : "flex", ["flexDirection"] : "column", ["alignItems"] : "center", ["justifyContent"] : "flex-start", ["border"] : "4px solid #3498db", ["boxSizing"] : "border-box", ["paddingTop"] : "0px", ["paddingBottom"] : "0px", ["overflowY"] : "hidden" })},
+{css:({ ["width"] : "100vw", ["height"] : "100vh", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["background"] : "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", ["margin"] : "0", ["padding"] : "0" })},
 jsx(
 RadixThemesFlex,
-{align:"start",className:"rx-Stack",css:({ ["paddingTop"] : "0px", ["paddingBottom"] : "0px", ["paddingInlineStart"] : "0px", ["paddingInlineEnd"] : "0px", ["width"] : "100%", ["background"] : "white", ["borderBottom"] : "0px solid #3498db", ["alignItems"] : "center", ["zIndex"] : "10", ["flexWrap"] : "wrap" }),direction:"row",gap:"3"},
+{align:"start",className:"rx-Stack",css:({ ["width"] : "90vw", ["height"] : "90vh", ["border"] : "2px solid #4A90E2", ["borderRadius"] : "15px", ["overflow"] : "hidden" }),direction:"column",gap:"1"},
 jsx(
-RadixThemesHeading,
-{css:({ ["color"] : "#34495e", ["fontFamily"] : "Helvetica, Arial, sans-serif", ["--default-font-family"] : "Helvetica, Arial, sans-serif", ["@media screen and (min-width: 0px)"] : ({ ["paddingLeft"] : "10px" }), ["@media screen and (min-width: 62em)"] : ({ ["paddingLeft"] : "20px" }) }),size:({ ["initial"] : "6", ["md"] : "7" })},
+RadixThemesFlex,
+{align:"start",className:"rx-Stack",css:({ ["width"] : "100%", ["height"] : "50px", ["backgroundColor"] : "#FFD700", ["alignItems"] : "center", ["paddingInlineStart"] : "4", ["paddingInlineEnd"] : "4", ["zIndex"] : "100", ["position"] : "relative" }),direction:"row",gap:"3"},
+jsx(
+RadixThemesText,
+{as:"p",css:({ ["fontSize"] : "1.2em", ["color"] : "black", ["fontWeight"] : "bold" })},
 "World Virtual"
+,),jsx(RadixThemesFlex,{css:({ ["flex"] : 1, ["justifySelf"] : "stretch", ["alignSelf"] : "stretch" })},)
+,jsx(
+RadixThemesText,
+{as:"p",css:({ ["marginLeft"] : "0.5em", ["color"] : "black", ["fontSize"] : "0.8em" })},
+"Mapa del proyecto."
 ,),jsx(
-RadixThemesTabs.Root,
-{css:({ ["&[data-orientation='vertical']"] : ({ ["display"] : "flex" }), ["colorScheme"] : "blue", ["minHeight"] : "auto" })},
+RadixThemesText,
+{as:"p",css:({ ["marginLeft"] : "0.5em", ["color"] : "black", ["fontSize"] : "0.8em" })},
+"Libro blanco"
+,),jsx(
+RadixThemesText,
+{as:"p",css:({ ["marginLeft"] : "0.5em", ["color"] : "black", ["fontSize"] : "0.8em" })},
+"C\u00f3digo abierto"
+,),jsx(Button_bdea2adb1c3cb190bc9aa3885e1309be,{},)
+,jsx(Fragment_278699aebe0229b67f94e686e5bbfb7c,{},)
+,),jsx(
+RadixThemesBox,
+{css:({ ["width"] : "100%", ["height"] : "100%", ["backgroundColor"] : "#228B22", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["padding"] : "2" })},
 jsx(
-RadixThemesTabs.List,
-{css:({ ["&[data-orientation='vertical']"] : ({ ["display"] : "block", ["boxShadow"] : "inset -1px 0 0 0 var(--gray-a5)" }), ["flexWrap"] : "wrap" })},
+RadixThemesBox,
+{css:({ ["backgroundColor"] : "white", ["border"] : "2px solid #4A90E2", ["borderRadius"] : "30px", ["boxShadow"] : "0 4px 20px rgba(0,0,0,0.1)", ["width"] : "90%", ["height"] : "85%", ["padding"] : "2rem", ["margin"] : "auto", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })},
 jsx(
-RadixThemesTabs.Trigger,
-{css:({ ["&[data-orientation='vertical']"] : ({ ["width"] : "100%" }), ["fontFamily"] : "Helvetica, Arial, sans-serif", ["--default-font-family"] : "Helvetica, Arial, sans-serif", ["@media screen and (min-width: 0px)"] : ({ ["size"] : "1" }), ["@media screen and (min-width: 62em)"] : ({ ["size"] : "2" }) }),value:"acerca"},
-"Acerca de"
-,),jsx(
-RadixThemesTabs.Trigger,
-{css:({ ["&[data-orientation='vertical']"] : ({ ["width"] : "100%" }), ["fontFamily"] : "Helvetica, Arial, sans-serif", ["--default-font-family"] : "Helvetica, Arial, sans-serif", ["@media screen and (min-width: 0px)"] : ({ ["size"] : "1" }), ["@media screen and (min-width: 62em)"] : ({ ["size"] : "2" }) }),value:"caracteristicas"},
-"Caracter\u00edsticas"
-,),jsx(
-RadixThemesTabs.Trigger,
-{css:({ ["&[data-orientation='vertical']"] : ({ ["width"] : "100%" }), ["fontFamily"] : "Helvetica, Arial, sans-serif", ["--default-font-family"] : "Helvetica, Arial, sans-serif", ["@media screen and (min-width: 0px)"] : ({ ["size"] : "1" }), ["@media screen and (min-width: 62em)"] : ({ ["size"] : "2" }) }),value:"comunidad"},
-"Comunidad"
-,),),),jsx(RadixThemesFlex,{css:({ ["flex"] : 1, ["justifySelf"] : "stretch", ["alignSelf"] : "stretch" })},)
-,jsx(Dropdownmenu__root_f52dc4acc3a89778e0b960c8c7011647,{},)
-,),jsx(
 RadixThemesFlex,
-{css:({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["flexGrow"] : "1", ["width"] : "100%", ["height"] : "100%", ["paddingTop"] : "0px", ["paddingBottom"] : "0px", ["boxSizing"] : "border-box" })},
-jsx(RadixThemesBox,{css:({ ["background"] : "white", ["border"] : "2px solid #3498db", ["borderRadius"] : "15px", ["padding"] : "0px", ["width"] : "100%", ["boxShadow"] : "lg", ["height"] : "100%", ["boxSizing"] : "border-box" })},)
-,),),jsx(
+{align:"start",className:"rx-Stack",css:({ ["alignItems"] : "center", ["justifyContent"] : "center", ["height"] : "100%" }),direction:"column",gap:"2"},
+jsx(
+RadixThemesText,
+{as:"p",css:({ ["fontSize"] : "1.5em", ["fontWeight"] : "bold", ["color"] : "#333" })},
+"\u00c1rea de Contenido Principal"
+,),jsx(
+RadixThemesText,
+{as:"p",css:({ ["fontSize"] : "1em", ["color"] : "#666", ["textAlign"] : "center" })},
+"Aqu\u00ed va el contenido principal de la aplicaci\u00f3n."
+,),jsx(
+RadixThemesText,
+{as:"p",css:({ ["fontSize"] : "0.9em", ["color"] : "#888", ["textAlign"] : "center" })},
+"El \u00e1rea se ajusta autom\u00e1ticamente al tama\u00f1o de la ventana."
+,),),),),),),jsx(
 NextHead,
 {},
 jsx(
 "title",
 {},
-"MetaversoCrypto3D | Index"
+"WoldvirtualCrypto3D | Index"
 ,),jsx("meta",{content:"favicon.ico",property:"og:image"},)
 ,),)
   )
