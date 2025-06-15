@@ -10,6 +10,25 @@ import { jsx } from "@emotion/react"
 
 
 
+export function Button_5b37f6ca731052029592de8c19d95b72 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_ab00aac4316c6e7e194b3b81fd3164cd = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Arbitrum" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_ab00aac4316c6e7e194b3b81fd3164cd},
+"Arbitrum"
+,)
+  )
+}
+
 export function Button_6c889623a9ccb3219a55f50ba2602202 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -68,12 +87,22 @@ RadixThemesButton,
   )
 }
 
+<<<<<<< HEAD
 export function Button_d4a80e94114e32e91cfa2025147abdd6 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
   const on_click_398bc081f24190707ba984ada59974bf = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Avalanche" }), ({  })))], args, ({  })))), [addEvents, Event])
+=======
+export function Button_bdea2adb1c3cb190bc9aa3885e1309be () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  const reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state = useContext(StateContexts.reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state)
+
+
+  const on_click_0b62d68901eb13b324e8b4eed6039390 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.toggle_networks_menu", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
 
 
 
@@ -81,8 +110,51 @@ export function Button_d4a80e94114e32e91cfa2025147abdd6 () {
   return (
     jsx(
 RadixThemesButton,
+<<<<<<< HEAD
 {css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_398bc081f24190707ba984ada59974bf},
 "Avalanche"
+=======
+{css:({ ["background"] : "#343a40", ["color"] : "white", ["marginLeft"] : "0.5em", ["fontSize"] : "0.65em", ["padding"] : "0.3em 0.6em", ["cursor"] : "pointer", ["borderRadius"] : "4px" }),onClick:on_click_0b62d68901eb13b324e8b4eed6039390},
+reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.selected_network
+,)
+  )
+}
+
+export function Button_20b47b495e2be473f225366ecb461e9f () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_b0ae231e11ada72431e18db8b956b307 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Ethereum" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_b0ae231e11ada72431e18db8b956b307},
+"Ethereum"
+,)
+  )
+}
+
+export function Button_e1cf53e1c4947790e64fed1e69facab5 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_1945f731915504a544948d7373abdaff = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_1945f731915504a544948d7373abdaff},
+"Solana"
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
 ,)
   )
 }
@@ -120,12 +192,20 @@ null
   )
 }
 
+<<<<<<< HEAD
 export function Button_e1cf53e1c4947790e64fed1e69facab5 () {
+=======
+export function Button_d4a80e94114e32e91cfa2025147abdd6 () {
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
+<<<<<<< HEAD
   const on_click_1945f731915504a544948d7373abdaff = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Solana" }), ({  })))], args, ({  })))), [addEvents, Event])
+=======
+  const on_click_398bc081f24190707ba984ada59974bf = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Avalanche" }), ({  })))], args, ({  })))), [addEvents, Event])
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
 
 
 
@@ -133,8 +213,13 @@ export function Button_e1cf53e1c4947790e64fed1e69facab5 () {
   return (
     jsx(
 RadixThemesButton,
+<<<<<<< HEAD
 {css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_1945f731915504a544948d7373abdaff},
 "Solana"
+=======
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_398bc081f24190707ba984ada59974bf},
+"Avalanche"
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
 ,)
   )
 }

@@ -1,7 +1,11 @@
 import { createContext, useContext, useMemo, useReducer, useState, createElement } from "react"
 import { applyDelta, Event, hydrateClientStorage, useEventLoop, refs } from "$/utils/state.js"
 
+<<<<<<< HEAD
 export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.wold_virtual__crypto_3_d____state": {"selected_network": "Redes Blockchain", "show_networks_menu": false}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state": {"selected_network": "Redes Blockchain", "show_networks_menu": false}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}}
+=======
+export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state": {"selected_network": "Redes Blockchain", "show_networks_menu": false}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.wold_virtual__crypto_3_d____state": {"selected_network": "Redes Blockchain", "show_networks_menu": false}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}}
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
 
 export const defaultColorMode = "system"
 export const ColorModeContext = createContext(null);
@@ -9,10 +13,17 @@ export const UploadFilesContext = createContext(null);
 export const DispatchContext = createContext(null);
 export const StateContexts = {
   reflex___state____state: createContext(null),
+<<<<<<< HEAD
   reflex___state____state__wold_virtual__crypto_3_d____state: createContext(null),
   reflex___state____state__reflex___state____on_load_internal_state: createContext(null),
   reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state: createContext(null),
   reflex___state____state__reflex___state____update_vars_internal_state: createContext(null),
+=======
+  reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state: createContext(null),
+  reflex___state____state__reflex___state____on_load_internal_state: createContext(null),
+  reflex___state____state__reflex___state____update_vars_internal_state: createContext(null),
+  reflex___state____state__wold_virtual__crypto_3_d____state: createContext(null),
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
   reflex___state____state__reflex___state____frontend_event_exception_state: createContext(null),
 }
 export const EventLoopContext = createContext(null);
@@ -53,7 +64,11 @@ export const initialEvents = () => [
 
 export const isDevMode = true
 
+<<<<<<< HEAD
 export const lastCompiledTimeStamp = "2025-06-15 22:35:18.900622"
+=======
+export const lastCompiledTimeStamp = "2025-06-15 22:39:43.720622"
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
 
 export function UploadFilesProvider({ children }) {
   const [filesById, setFilesById] = useState({})
@@ -77,28 +92,49 @@ export function EventLoopProvider({ children }) {
 
 export function StateProvider({ children }) {
   const [reflex___state____state, dispatch_reflex___state____state] = useReducer(applyDelta, initialState["reflex___state____state"])
+<<<<<<< HEAD
   const [reflex___state____state__wold_virtual__crypto_3_d____state, dispatch_reflex___state____state__wold_virtual__crypto_3_d____state] = useReducer(applyDelta, initialState["reflex___state____state.wold_virtual__crypto_3_d____state"])
   const [reflex___state____state__reflex___state____on_load_internal_state, dispatch_reflex___state____state__reflex___state____on_load_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____on_load_internal_state"])
   const [reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state, dispatch_reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state] = useReducer(applyDelta, initialState["reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state"])
   const [reflex___state____state__reflex___state____update_vars_internal_state, dispatch_reflex___state____state__reflex___state____update_vars_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____update_vars_internal_state"])
+=======
+  const [reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state, dispatch_reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state] = useReducer(applyDelta, initialState["reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state"])
+  const [reflex___state____state__reflex___state____on_load_internal_state, dispatch_reflex___state____state__reflex___state____on_load_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____on_load_internal_state"])
+  const [reflex___state____state__reflex___state____update_vars_internal_state, dispatch_reflex___state____state__reflex___state____update_vars_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____update_vars_internal_state"])
+  const [reflex___state____state__wold_virtual__crypto_3_d____state, dispatch_reflex___state____state__wold_virtual__crypto_3_d____state] = useReducer(applyDelta, initialState["reflex___state____state.wold_virtual__crypto_3_d____state"])
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
   const [reflex___state____state__reflex___state____frontend_event_exception_state, dispatch_reflex___state____state__reflex___state____frontend_event_exception_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____frontend_event_exception_state"])
   const dispatchers = useMemo(() => {
     return {
       "reflex___state____state": dispatch_reflex___state____state,
+<<<<<<< HEAD
       "reflex___state____state.wold_virtual__crypto_3_d____state": dispatch_reflex___state____state__wold_virtual__crypto_3_d____state,
       "reflex___state____state.reflex___state____on_load_internal_state": dispatch_reflex___state____state__reflex___state____on_load_internal_state,
       "reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state": dispatch_reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state,
       "reflex___state____state.reflex___state____update_vars_internal_state": dispatch_reflex___state____state__reflex___state____update_vars_internal_state,
+=======
+      "reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state": dispatch_reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state,
+      "reflex___state____state.reflex___state____on_load_internal_state": dispatch_reflex___state____state__reflex___state____on_load_internal_state,
+      "reflex___state____state.reflex___state____update_vars_internal_state": dispatch_reflex___state____state__reflex___state____update_vars_internal_state,
+      "reflex___state____state.wold_virtual__crypto_3_d____state": dispatch_reflex___state____state__wold_virtual__crypto_3_d____state,
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
       "reflex___state____state.reflex___state____frontend_event_exception_state": dispatch_reflex___state____state__reflex___state____frontend_event_exception_state,
     }
   }, [])
 
   return (
     createElement(StateContexts.reflex___state____state,{value: reflex___state____state},
+<<<<<<< HEAD
     createElement(StateContexts.reflex___state____state__wold_virtual__crypto_3_d____state,{value: reflex___state____state__wold_virtual__crypto_3_d____state},
     createElement(StateContexts.reflex___state____state__reflex___state____on_load_internal_state,{value: reflex___state____state__reflex___state____on_load_internal_state},
     createElement(StateContexts.reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state,{value: reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state},
     createElement(StateContexts.reflex___state____state__reflex___state____update_vars_internal_state,{value: reflex___state____state__reflex___state____update_vars_internal_state},
+=======
+    createElement(StateContexts.reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state,{value: reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state},
+    createElement(StateContexts.reflex___state____state__reflex___state____on_load_internal_state,{value: reflex___state____state__reflex___state____on_load_internal_state},
+    createElement(StateContexts.reflex___state____state__reflex___state____update_vars_internal_state,{value: reflex___state____state__reflex___state____update_vars_internal_state},
+    createElement(StateContexts.reflex___state____state__wold_virtual__crypto_3_d____state,{value: reflex___state____state__wold_virtual__crypto_3_d____state},
+>>>>>>> 65dd4384c043c4da8710ca897a07d7f9d8d6f363
     createElement(StateContexts.reflex___state____state__reflex___state____frontend_event_exception_state,{value: reflex___state____state__reflex___state____frontend_event_exception_state},
     createElement(DispatchContext.Provider, {value: dispatchers}, children),
 ))))))  )
