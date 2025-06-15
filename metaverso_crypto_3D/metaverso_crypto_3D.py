@@ -17,25 +17,29 @@ def header() -> rx.Component:
     return rx.hstack(
         rx.text("World Virtual", font_size="1.3em", color="black"),
         rx.spacer(),
-        rx.text("Acerca de", margin_left="0.7em", color="black", font_size="0.85em"),
-        rx.text("Características", margin_left="0.7em", color="black", font_size="0.85em"),
-        rx.text("Comunidad", margin_left="0.7em", color="black", font_size="0.85em"),
+        rx.text("Mapa del proyecto.", margin_left="0.6em", color="black", font_size="0.85em"),
+        rx.text("Libro blanco", margin_left="0.6em", color="black", font_size="0.85em"),
+        rx.text("Código abierto", margin_left="0.6em", color="black", font_size="0.85em"),
         rx.button(
             State.selected_network,
             on_click=State.toggle_networks_menu,
             bg="#343a40",
             color="white",
-            margin_left="1.2em",
-            font_size="0.85em",
-            padding="0.4em 0.9em",
+            margin_left="0.5em",
+            font_size="0.60em",
+            padding="0.3em 0.8em",
             cursor="pointer",
         ),
         rx.cond(
             State.show_networks_menu,
             rx.vstack(
-                rx.button("Red A", on_click=lambda: State.select_network("Red A"), width="100%"),
-                rx.button("Red B", on_click=lambda: State.select_network("Red B"), width="100%"),
-                rx.button("Red C", on_click=lambda: State.select_network("Red C"), width="100%"),
+                rx.button("Binance Smart Chain", on_click=lambda: State.select_network("Red A"), width="100%"),
+                rx.button("Ethereun", on_click=lambda: State.select_network("Red B"), width="100%"),
+                rx.button("poligon", on_click=lambda: State.select_network("Red C"), width="100%"),
+                rx.button("4 otra red...", on_click=lambda: State.select_network("Red A"), width="100%"),
+                rx.button("5 otra red...", on_click=lambda: State.select_network("Red B"), width="100%"),
+                rx.button("6 otra red...", on_click=lambda: State.select_network("Red C"), width="100%"),
+                
                 position="absolute",
                 top="40px",  # Adjust as needed to be below the button
                 right="12px", # Aligned with the button's right edge
@@ -68,19 +72,19 @@ def main_content_area() -> rx.Component:
             rx.text("AQUÍ tiene que ir la zona blanca., del tamaño del marco blanco", color="black", padding="20px"),
             background_color="white",
             border="2px solid blue", # Blue border for the white box
-            border_radius="15px",
+            border_radius="70px",
             box_shadow="lg",
-            width="90%", # Ancho de la zona blanca
-            height="90%", # Alto de la zona blanca
+            width="88%", # Ancho de la zona blanca
+            height="78%", # Alto de la zona blanca
             padding="0",
             margin="auto", # Centers the white box
             box_sizing="border-box",
             overflow="hidden",
         ),
-        width="100%",
+        width="78%",
         flex_grow="1", # Occupies remaining vertical space in its parent
         background_color="#228B22", # Green background for the main content area
-        padding="2px", # This creates the visual "blue frame" around the green area if the outer box has a blue border
+        padding="1px", # This creates the visual "blue frame" around the green area if the outer box has a blue border
         box_sizing="border-box",
         display="flex",
         align_items="center",
@@ -90,9 +94,9 @@ def main_content_area() -> rx.Component:
 
 def index() -> rx.Component:
     # Define the padding for the overall page frame
-    page_padding = "2cm"
+    page_padding = "1cm"
     # Define the border thickness for the main content area
-    main_frame_border_thickness = "2px"
+    main_frame_border_thickness = "1px"
 
     return rx.box(
         rx.vstack(
@@ -100,16 +104,16 @@ def index() -> rx.Component:
             main_content_area(),
             # Calculate width and height to fit perfectly within the parent box
             # Subtract 2 * padding (left/right, top/bottom) from 100%
-            width=f"calc(100% - (2 * {page_padding}))",
-            height=f"calc(100% - (2 * {page_padding}))",
+            width=f"calc(88% - (1 * {page_padding}))",
+            height=f"calc(79% - (1 * {page_padding}))",
             border=f"{main_frame_border_thickness} solid blue", # Blue border around the entire visible content area
-            border_radius="15px", # Apply border-radius to match the screenshot
+            border_radius="20px", # Apply border-radius to match the screenshot
             box_sizing="border-box", # Ensure border/padding are included in its own dimensions
             overflow="hidden", # Hide overflow for this main frame
         ),
         # This is the absolute root container, spanning the entire viewport
-        width="100vw",
-        height="100vh",
+        width="88vw",
+        height="78vh",
         display="flex",
         align_items="center",
         justify_content="center",
@@ -124,18 +128,18 @@ app = rx.App(
         gray_color="slate",
         styles={
             "*": {
-                "margin": "0",
-                "padding": "0",
+                "margin": "1",
+                "padding": "1",
                 "boxSizing": "border-box", # Universal box-sizing
             },
             "html": {
-                "height": "100%",
-                "width": "100%",
+                "height": "88%",
+                "width": "78%",
                 "overflow": "hidden", # No scrollbars on html element
             },
             "body": {
-                "height": "100%",
-                "width": "100%",
+                "height": "88%",
+                "width": "78%",
                 "overflow": "hidden", # No scrollbars on body element
                 "&::-webkit-scrollbar": {
                     "display": "none",
