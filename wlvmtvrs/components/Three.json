@@ -1,0 +1,26 @@
+{
+  "nfts": [
+    {
+      "id": "1",
+      "name": "Virtual Land Plot A",
+      "description": "A prime piece of virtual land in the metaverse.",
+      "image": "ipfs://<hash_of_image>",
+      "attributes": {
+        "size": "1000 sqm",
+        "location": "Sector 1",
+        "owner": "0x1234567890abcdef1234567890abcdef12345678"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Virtual Land Plot B",
+      "description": "A scenic virtual land plot with a view.",
+      "image": "ipfs://<hash_of_image>",
+      "attributes": {
+        "size": "1500 sqm",
+        "location": "Sector 2",
+        "owner": "0xabcdef1234567890abcdef1234567890abcdef12"
+      }
+    }
+  ]
+}
