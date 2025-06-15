@@ -1,13 +1,18 @@
 import { createContext, useContext, useMemo, useReducer, useState, createElement } from "react"
 import { applyDelta, Event, hydrateClientStorage, useEventLoop, refs } from "$/utils/state.js"
 
+<<<<<<< HEAD
 export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}, "reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state": {"selected_network": "Redes Blockchain", "show_networks_menu": false}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____update_vars_internal_state": {}}
+=======
+export const initialState = {}
+>>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
 
 export const defaultColorMode = "system"
 export const ColorModeContext = createContext(null);
 export const UploadFilesContext = createContext(null);
 export const DispatchContext = createContext(null);
 export const StateContexts = {
+<<<<<<< HEAD
   reflex___state____state: createContext(null),
   reflex___state____state__reflex___state____frontend_event_exception_state: createContext(null),
   reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state: createContext(null),
@@ -53,6 +58,23 @@ export const initialEvents = () => [
 export const isDevMode = true
 
 export const lastCompiledTimeStamp = "2025-06-15 15:52:47.617507"
+=======
+}
+export const EventLoopContext = createContext(null);
+export const clientStorage = {}
+
+export const state_name = undefined
+
+export const exception_state_name = undefined
+
+export const onLoadInternalEvent = () => []
+
+export const initialEvents = () => []
+
+export const isDevMode = true
+
+export const lastCompiledTimeStamp = "2025-06-14 23:38:48.227228"
+>>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
 
 export function UploadFilesProvider({ children }) {
   const [filesById, setFilesById] = useState({})
@@ -75,6 +97,7 @@ export function EventLoopProvider({ children }) {
 }
 
 export function StateProvider({ children }) {
+<<<<<<< HEAD
   const [reflex___state____state, dispatch_reflex___state____state] = useReducer(applyDelta, initialState["reflex___state____state"])
   const [reflex___state____state__reflex___state____frontend_event_exception_state, dispatch_reflex___state____state__reflex___state____frontend_event_exception_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____frontend_event_exception_state"])
   const [reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state, dispatch_reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state] = useReducer(applyDelta, initialState["reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state"])
@@ -87,10 +110,15 @@ export function StateProvider({ children }) {
       "reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state": dispatch_reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state,
       "reflex___state____state.reflex___state____on_load_internal_state": dispatch_reflex___state____state__reflex___state____on_load_internal_state,
       "reflex___state____state.reflex___state____update_vars_internal_state": dispatch_reflex___state____state__reflex___state____update_vars_internal_state,
+=======
+  const dispatchers = useMemo(() => {
+    return {
+>>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
     }
   }, [])
 
   return (
+<<<<<<< HEAD
     createElement(StateContexts.reflex___state____state,{value: reflex___state____state},
     createElement(StateContexts.reflex___state____state__reflex___state____frontend_event_exception_state,{value: reflex___state____state__reflex___state____frontend_event_exception_state},
     createElement(StateContexts.reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state,{value: reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state},
@@ -98,4 +126,8 @@ export function StateProvider({ children }) {
     createElement(StateContexts.reflex___state____state__reflex___state____update_vars_internal_state,{value: reflex___state____state__reflex___state____update_vars_internal_state},
     createElement(DispatchContext.Provider, {value: dispatchers}, children),
 )))))  )
+=======
+    createElement(DispatchContext.Provider, {value: dispatchers}, children),
+  )
+>>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
 }

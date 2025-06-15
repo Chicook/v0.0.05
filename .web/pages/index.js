@@ -1,15 +1,21 @@
 /** @jsxImportSource @emotion/react */
 
 
+<<<<<<< HEAD
 import { Fragment, useCallback, useContext } from "react"
 import { Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Text as RadixThemesText } from "@radix-ui/themes"
 import { EventLoopContext, StateContexts } from "$/utils/context"
 import { Event, isTrue } from "$/utils/state"
+=======
+import { Fragment } from "react"
+import { Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Text as RadixThemesText } from "@radix-ui/themes"
+>>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
 import NextHead from "next/head"
 import { jsx } from "@emotion/react"
 
 
 
+<<<<<<< HEAD
 export function Button_1a9adbd968d6286c04be762cc974d643 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -114,6 +120,8 @@ RadixThemesButton,
   )
 }
 
+=======
+>>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
 export default function Component() {
     
 
@@ -126,6 +134,7 @@ Fragment,
 {},
 jsx(
 RadixThemesBox,
+<<<<<<< HEAD
 {css:({ ["width"] : "100vw", ["height"] : "100vh", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["background"] : "linear-gradient(to right, #a8c0ff, #3f2b96)", ["boxSizing"] : "border-box", ["padding"] : "0px", ["overflow"] : "hidden", ["position"] : "relative" })},
 jsx(
 RadixThemesFlex,
@@ -133,6 +142,12 @@ RadixThemesFlex,
 jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",css:({ ["width"] : "100%", ["height"] : "33px", ["backgroundColor"] : "#FFD700", ["alignItems"] : "center", ["paddingLeft"] : "12px", ["paddingRight"] : "12px", ["zIndex"] : "10", ["flexShrink"] : "0", ["boxSizing"] : "border-box", ["position"] : "relative" }),direction:"row",gap:"3"},
+=======
+{css:({ ["width"] : "100%", ["height"] : "100vh", ["display"] : "flex", ["flexDirection"] : "column", ["border"] : "0px", ["boxShadow"] : "none", ["padding"] : "0px", ["background"] : "linear-gradient(to right, #a8c0ff, #3f2b96)", ["boxSizing"] : "border-box" })},
+jsx(
+RadixThemesFlex,
+{align:"start",className:"rx-Stack",css:({ ["width"] : "100%", ["height"] : "33px", ["backgroundColor"] : "#FFD700", ["alignItems"] : "center", ["paddingLeft"] : "12px", ["paddingRight"] : "12px", ["zIndex"] : "10", ["flexShrink"] : "0", ["boxSizing"] : "border-box" }),direction:"row",gap:"3"},
+>>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
 jsx(
 RadixThemesText,
 {as:"p",css:({ ["fontSize"] : "1.3em", ["color"] : "black" })},
@@ -150,6 +165,7 @@ RadixThemesText,
 RadixThemesText,
 {as:"p",css:({ ["marginLeft"] : "0.7em", ["color"] : "black", ["fontSize"] : "0.85em" })},
 "Comunidad"
+<<<<<<< HEAD
 ,),jsx(Button_a75726215240045113e1050d71cae7d2,{},)
 ,jsx(Fragment_fcc0f6f7f577c2432793a35778a9b148,{},)
 ,),jsx(
@@ -158,11 +174,27 @@ RadixThemesBox,
 jsx(
 RadixThemesBox,
 {css:({ ["backgroundColor"] : "white", ["border"] : "2px solid blue", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["width"] : "90%", ["height"] : "90%", ["padding"] : "0", ["margin"] : "auto", ["boxSizing"] : "border-box", ["overflow"] : "hidden" })},
+=======
+,),jsx(
+RadixThemesButton,
+{css:({ ["background"] : "#343a40", ["color"] : "white", ["marginLeft"] : "1.2em", ["fontSize"] : "0.85em", ["padding"] : "0.4em 0.9em" })},
+"Redes Blockchain"
+,),),jsx(
+RadixThemesBox,
+{css:({ ["width"] : "100%", ["flexGrow"] : "1", ["backgroundColor"] : "#228B22", ["padding"] : "2px", ["boxSizing"] : "border-box", ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })},
+jsx(
+RadixThemesBox,
+{css:({ ["backgroundColor"] : "white", ["border"] : "2px solid blue", ["borderRadius"] : "15px", ["boxShadow"] : "lg", ["width"] : "90%", ["height"] : "100%", ["padding"] : "0", ["margin"] : "0", ["boxSizing"] : "border-box", ["overflow"] : "hidden" })},
+>>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
 jsx(
 RadixThemesText,
 {as:"p",css:({ ["color"] : "black", ["padding"] : "20px" })},
 "AQU\u00cd tiene que ir la zona blanca., del tama\u00f1o del marco blanco"
+<<<<<<< HEAD
 ,),),),),),jsx(
+=======
+,),),),),jsx(
+>>>>>>> e5dd939517596ab8a7cb0d8f3e81ca0f2aed84f3
 NextHead,
 {},
 jsx(
