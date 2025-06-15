@@ -29,6 +29,26 @@ RadixThemesButton,
   )
 }
 
+export function Button_bdea2adb1c3cb190bc9aa3885e1309be () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  const reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state = useContext(StateContexts.reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state)
+
+
+  const on_click_0b62d68901eb13b324e8b4eed6039390 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.toggle_networks_menu", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["background"] : "#343a40", ["color"] : "white", ["marginLeft"] : "0.5em", ["fontSize"] : "0.65em", ["padding"] : "0.3em 0.6em", ["cursor"] : "pointer", ["borderRadius"] : "4px" }),onClick:on_click_0b62d68901eb13b324e8b4eed6039390},
+reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.selected_network
+,)
+  )
+}
+
 export function Button_de0a5e42e819885256c25405dc6b025c () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -44,44 +64,6 @@ export function Button_de0a5e42e819885256c25405dc6b025c () {
 RadixThemesButton,
 {css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_87b6a14f951f570582f31591b6dac5cd},
 "Binance Smart Chain"
-,)
-  )
-}
-
-export function Button_20b47b495e2be473f225366ecb461e9f () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_b0ae231e11ada72431e18db8b956b307 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Ethereum" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_b0ae231e11ada72431e18db8b956b307},
-"Ethereum"
-,)
-  )
-}
-
-export function Button_5b37f6ca731052029592de8c19d95b72 () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-  const on_click_ab00aac4316c6e7e194b3b81fd3164cd = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Arbitrum" }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_ab00aac4316c6e7e194b3b81fd3164cd},
-"Arbitrum"
 ,)
   )
 }
@@ -138,26 +120,6 @@ null
   )
 }
 
-export function Button_bdea2adb1c3cb190bc9aa3885e1309be () {
-  
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-  const reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state = useContext(StateContexts.reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state)
-
-
-  const on_click_0b62d68901eb13b324e8b4eed6039390 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.toggle_networks_menu", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["background"] : "#343a40", ["color"] : "white", ["marginLeft"] : "0.5em", ["fontSize"] : "0.65em", ["padding"] : "0.3em 0.6em", ["cursor"] : "pointer", ["borderRadius"] : "4px" }),onClick:on_click_0b62d68901eb13b324e8b4eed6039390},
-reflex___state____state__wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.selected_network
-,)
-  )
-}
-
 export function Button_e1cf53e1c4947790e64fed1e69facab5 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
@@ -173,6 +135,44 @@ export function Button_e1cf53e1c4947790e64fed1e69facab5 () {
 RadixThemesButton,
 {css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_1945f731915504a544948d7373abdaff},
 "Solana"
+,)
+  )
+}
+
+export function Button_20b47b495e2be473f225366ecb461e9f () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_b0ae231e11ada72431e18db8b956b307 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Ethereum" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_b0ae231e11ada72431e18db8b956b307},
+"Ethereum"
+,)
+  )
+}
+
+export function Button_5b37f6ca731052029592de8c19d95b72 () {
+  
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+  const on_click_ab00aac4316c6e7e194b3b81fd3164cd = useCallback(((...args) => (addEvents([(Event("reflex___state____state.wold_virtual__crypto_3_d____wold_virtual__crypto_3_d____state.select_network", ({ ["network"] : "Arbitrum" }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["width"] : "100%", ["fontSize"] : "0.7em", ["padding"] : "0.3em" }),onClick:on_click_ab00aac4316c6e7e194b3b81fd3164cd},
+"Arbitrum"
 ,)
   )
 }
