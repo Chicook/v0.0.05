@@ -12,7 +12,7 @@ import { jsx } from "@emotion/react"
 
 export function Fragment_fcc0f6f7f577c2432793a35778a9b148 () {
   
-  const reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state = useContext(StateContexts.reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state)
+  const reflex___state____state__WoldVirtual_Crypto_3D___WoldVirtual_Crypto_3D____state = useContext(StateContexts.reflex___state____state__WoldVirtual_Crypto_3D___WoldVirtual_Crypto_3D____state)
 
 
 
@@ -23,7 +23,7 @@ export function Fragment_fcc0f6f7f577c2432793a35778a9b148 () {
     jsx(
 Fragment,
 {},
-(reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state.show_networks_menu ? (jsx(
+(reflex___state____state__WoldVirtual_Crypto_3D___WoldVirtual_Crypto_3D____state.show_networks_menu ? (jsx(
 Fragment,
 {},
 jsx(
@@ -40,10 +40,10 @@ jsx(Button_dd6fd48cf9544ade41bd544f5a4c0b93,{},)
 export function Button_a75726215240045113e1050d71cae7d2 () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
-  const reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state = useContext(StateContexts.reflex___state____state__metaverso_crypto_3_d___metaverso_crypto_3_d____state)
+  const reflex___state____state__WoldVirtual_Crypto_3D___WoldVirtual_Crypto_3D____state = useContext(StateContexts.reflex___state____state__WoldVirtual_Crypto_3D___WoldVirtual_Crypto_3D____state)
 
 
-  const on_click_22343bb10d8cc595ba63dd56b7b4fc1d = useCallback(((...args) => (addEvents([(Event("reflex___state____state.metaverso_crypto_3_d___metaverso_crypto_3_d____state.toggle_networks_menu", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_22343bb10d8cc595ba63dd56b7b4fc1d = useCallback(((...args) => (addEvents([(Event("reflex___state____state.WoldVirtual_Crypto_3D___WoldVirtual_Crypto_3D____state.toggle_networks_menu", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
 
