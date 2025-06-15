@@ -1,31 +1,6 @@
-# Ignore Reflex 
-
-.states
 .web
+.states
 *.py[cod]
 assets/external/
+*.db
 __pycache__/
-
-# node_modules
-
-.env
-.env.woldvirtual
-
-# Hardhat files
-
-/cache
-/artifacts
-
-# TypeChain files
-
-/typechain
-/typechain-types
-
-# solidity-coverage files
-
-/coverage
-/coverage.json
-
-# Hardhat Ignition default folder for deployments against a local node
-
-ignition/deployments/chain-31337
